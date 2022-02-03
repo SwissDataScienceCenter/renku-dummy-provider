@@ -7,6 +7,16 @@ license = "Apache-2.0"
 packages = [
     { include = "dummy_provider" }
 ]
+classifiers = [
+    "Environment :: Plugins",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Programming Language :: Python :: 3",
+    "Framework :: Renku"
+]
 
 [tool.poetry.dependencies]
 python = "^3.7"
