@@ -36,7 +36,7 @@ class DummyProvider(IWorkflowProvider):
 
     @hookimpl
     def workflow_execute(self, dag: nx.DiGraph, basedir: Path, config: Dict[str, Any]):
-        raise errors.ParameterError(
+        raise errors.UsageError(
             "Dummy provider is never meant to be used for executing workflows."
         )
 
