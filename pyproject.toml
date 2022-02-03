@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "renku-dummy-provider"
+version = "0.0.1"
+description = "Dummy workflow provider for Renku"
+authors = ["John Doe <john@examples.com>"]
+license = "Apache-2.0"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+renku = "^1.0.0"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.plugins."renku"]
+argo = "dummy_provider.dummy:dummy_plugin"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
